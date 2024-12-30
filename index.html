@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating Component Main</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+</head>
+<body class="bg-gray-900   font-family: Overpass,serif";>
+
+     <div id="whole" class="h-[350] text-slate-400] bg-gray-800 w-[345] mt-[200] ml-[600] round-full rounded-xl p-5">
+        <div class="pt-[8]">
+           <img src="interactive-rating-component-main/images/icon-star.svg" class="rounded-full shadow-lg bg-gray-950 h-6 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" alt="">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </div> 
+          <div id="survey" class="">
+             <p class="text-xl font-semibold text-white mt-[50] ">How did we do?</p>
+             <br>
+            <p class="text-slate-400 text-sm"> 
+              Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+           </p>
+            </div>
+            <div id="rating-options" class="flex gap-5 mt-5">
+             <button onclick="selectRating(1)" class=" h-[40] w-[40] rounded-full hover:bg-white rating-btn1 text-slate-400 bg-gray-950 ">1</button>
+             <button onclick="selectRating(2)" class=" h-[40] w-[40] rounded-full hover:bg-white rating-btn2 text-slate-400 bg-gray-950">2</button>
+             <button onclick="selectRating(3)" class=" h-[40] w-[40] rounded-full hover:bg-white rating-btn3 text-slate-400 bg-gray-950">3</button>
+             <button onclick="selectRating(4)" class=" h-[40] w-[40] rounded-full hover:bg-white rating-btn4 text-slate-400 bg-gray-950">4</button>
+             <button onclick="selectRating(5)" class=" h-[40] w-[40] rounded-full hover:bg-white rating-btn5 text-slate-400 bg-gray-950">5</button>
+            </div>
+            <div class="w-full mt-[15]">
+                <button id="submit-button" onclick="submitRating()" class="bg-orange-500 rounded-full h-[40] w-full hover:bg-white cursor-pointer">SUBMIT</button>
+            </div>
+             </div>                         
+    
+        <div id="Thank-you" class="hidden h-[350] text-slate-400] bg-gray-800 w-[345] mt-[200] ml-[600] round-full rounded-xl">
+          <img src="interactive-rating-component-main/images/illustration-thank-you.svg" class="pt-[30] ml-[80]" alt="">
+          <div class="flex justify-center items-center ">
+            <button class="text-orange-500 mt-[30] bg-gray-700 h-[30] rounded-full px-3 "> 
+            You selected &nbsp;<span id="selected-rating"></span>&nbsp;  out of five</button>
+          </div>
+          
+         <h2 class="font-bold text-lg text-white pt-[30] text-center">Thank you!</h2>
+          <p class="text-center text-slate-400 text-sm pt-[10] ">
+            We appreciate you taking the time to give a rating.
+            <br>
+            If you ever need more support,don’t hesitate to <br>
+            <p class="ml-[105] text-slate-400 text-sm">get in touch!</p>
+         </p>
+        </div>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="inter.js"></script>
+</body>
+</html>
